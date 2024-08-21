@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding-top: 20%;
+        }
+        .message {
+            display: none;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <p>Connecting to server...</p>
+        <p>Bypassing security...</p>
+        <p>Accessing personal data...</p>
+    </div>
+    <div class="message" id="prankMessage">
+        <p>You've been pranked by "The Undertaker!" 😄</p>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('prankMessage').style.display = 'block';
+        }, 10000); // 10 seconds delay
+    </script>
+</body>
+</html>
